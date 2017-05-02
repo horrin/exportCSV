@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
 
 router.post('/', function (req, res, next) {
-  console.log("receive Json: " + req.body.post_json);
+  // console.log("receive Json: " + req.body.post_json);
 
 
   let fixedJson = genCSV.fixedJson(JSON.parse(req.body.post_json).results);
